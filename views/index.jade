@@ -1,0 +1,26 @@
+extends layout
+block content
+  h1= title
+  p Welcome to #{title}
+  p name :
+    br
+    input(type='text',autofocus)
+  p password :
+    br
+    input(type='password')
+  p date of birth
+    br
+    input(type='date')
+  p faculty :
+    br
+    select(list='faculty')
+      option(value=null) choose
+      option(value='science') science
+      option(value='law') law
+  p
+    button(type='submit') submit
+
+
+  //- var anyArray =[1,2,3,4]
+  //each value in anyArray
+
